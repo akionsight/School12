@@ -9,5 +9,5 @@ rno = int(input("Enter rno of student: "))
 name = input("Enter name of student: ")
 avg = int(input("Enter avg marks of student: "))
 
-cursor.execute(f"INSERT INTO student (rno, name, avg) VALUES ({rno}, {name}, {avg})")
+cursor.execute(f"INSERT INTO student (rno, 'name', avg) VALUES ({rno}, {name}, {avg})")
 conn.commit()
